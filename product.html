@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+     <link rel="stylesheet" href="css/stylec.css">
+     <link rel="stylesheet" href="css/all.css">
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <title>product</title>
+
+<style>
+    .home-product input{
+        width: 50px;
+        display: inline;
+        padding: 10px;
+    }
+    .select{
+        width: 150px;
+        height: 50px;
+        text-align: center;
+    }
+    .products{
+        justify-content: space-evenly;
+    }
+.small-img-group{
+    display: flex;
+
+}
+.small-img-col{
+    flex-basis: 25%;
+    cursor: pointer;
+    margin: 2px;
+}
+</style>
+</head>
+<body >
+    
+
+<!-- start navbar -->
+
+<div class="contanier n ">
+    <nav  class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand " href="#"><img src="img/logo1.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse  navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              
+            </ul>
+            <div class="mx-5 icon-nav">
+        <a href="#">    <i class="fa-solid fa-magnifying-glass "></i> </a>
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+          </div>
+        </div>
+      </nav>
+</div>
+<!-- end navbar -->
+
+<!-- start Home -->
+<div class="products">
+<div class="row products container mt-5 mx-auto">
+
+<div class="col-lg-5 col-md-12 col-12">
+
+<img class="img-fluid pb-1" width="100%" id="MainImg" src="img/shop/1.jpg" alt="">
+
+
+<div class="small-img-group">
+      <div class="small-img-col "><img  onclick="changphoto (this.src)"  class="smal-img" width="100%" src="img/shop/16.jpg" alt="">    </div>
+      <div class="small-img-col"> <img  onclick="changphoto (this.src)" class="SmallImg" width="100%" src="img/shop/24.jpg" alt=""> </div>
+      <div class="small-img-col"> <img  onclick="changphoto (this.src)" class="SmallImg "width="100%" src="img/shop/26.jpg" alt="">    </div>
+      <div class="small-img-col"> <img onclick="changphoto (this.src)" class="SmallImg "width="100%" src="img/shop/25.jpg" alt="">   </div>
+</div>
+
+
+</div>
+
+
+<div class="home-product col-lg-6 col-md-12 col-12">
+
+    <h6 class="my-4">HOME/T_ Shert</h6>
+    <h3 class="my-4">Men`s fashoin T Shirt</h3>
+    <h2 class="my-4" >salary : $199.001 ;</h2>
+
+    <select class="my-4 select btn btn-success text-uppercase" >
+        <option >selct size</option>
+        <option >XL</option>
+        <option >XXL</option>
+        <option >SMALL</option>
+        <option >Large</option>
+    </select>
+    <br>
+   
+    <input class="form-control " type="number" value="1">
+    <button class="btn btn-success mx-2 text-uppercase p-2"> add to card</button>
+<h3 class="my-4">product details</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae vitae, dolore architecto in ab neque quo non, aperiam nam libero obcaecati blanditiis eius sapiente! Adipisci molestias laudantium distinctio amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam facere accusamus ad natus, qui ullam? Corrupti fuga nesciunt nam, libero ex placeat animi fugit maiores adipisci! Quas, eaque ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ullam vitae eius quia debitis pariatur maiores dolorum accusantium assumenda necessitatibus rerum optio excepturi eaque, inventore incidunt provident culpa sint!</p>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<section>
+    <div class="featured">
+        <h3>Our SHOP</h3>
+        <hr class="hr mx-auto">
+        <p>here you can check out our new products with fair price on remo.</p>
+    </div>
+    
+    
+    
+    <div class="row  mx-auto m-0 p-0" >
+    
+        <div class="product text-center col-lg-3 col-md-3 col-12">
+    <img src="img/shop/1.jpg" alt="" >
+    
+    <div class="star ">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+    
+    <div class="detals-product my-4">
+        <p class="p-name">Sport Boot </p>
+    <p class="p-price">$92.00</p>
+    <button type="button">BUY NOW</button>
+    </div>
+        </div>
+        <div class="product text-center col-lg-3 col-md-3 col-12">
+            <img src="img/shop/18.jpg" alt="" >
+            
+            <div class="star ">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            
+            <div class="detals-product my-4">
+                <p class="p-name">Sport Boot </p>
+            <p class="p-price">$92.00</p>
+            <button type="button">BUY NOW</button>
+            </div>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img src="img/shop/22.jpg" alt="" >
+                    
+                    <div class="star ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    
+                    <div class="detals-product my-4">
+                        <p class="p-name">Sport Boot </p>
+                    <p class="p-price">$92.00</p>
+                    <button type="button">BUY NOW</button>
+                    </div>
+                        </div>
+                        <div class="product text-center col-lg-3 col-md-4 col-12">
+                            <img src="img/shop/3.jpg" alt="" >
+                            
+                           
+                            <div class="star ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            
+                            <div class="detals-product my-4">
+                                <p class="p-name">Sport Boot </p>
+                            <p class="p-price">$92.00</p>
+                            <button type="button">BUY NOW</button>
+                            </div>
+                                </div>
+    </div>
+    </section>
+
+    <div class="btn-group me-2 mx-5 my-5 " role="group" aria-label="Second group" >
+        <button type="button" class="btn btn-secondary p-2">previous</button>
+    
+        <button type="button" class="btn btn-primary">1</button>
+        <button type="button" class="btn btn-primary">2</button>
+        <button type="button" class="btn btn-primary">3</button>
+        <button type="button" class="btn btn-primary">4</button>
+    
+        <button type="button" class="btn btn-dark">Next</button>
+      </div>  
+<!-- start footer -->
+
+<section class="container-fulid bg-secondary footer ">
+    <div class="container row mt-5 m-auto">
+        <div class="text-center col-lg-3 col-md-4 col-sm-6 mt-4">
+  <img src="img/logo2.png" alt="000">
+  <p class="m-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cumque reprehenderit beatae vel, neque, cum numquam quia tempore sequi voluptates distinctio voluptatum autem laboriosam id mollitia pariatur non eum perferendis.</p>
+        </div>
+  
+        <div class="text-center  col-lg-3 col-md-4 col-sm-6 mt-4">
+            <h1 class="mb-4">Featured</h1>
+            <div class="link-f ">
+                <a class="" href="#">MEN</a>
+                <a class="" href="#">WOMEN</a>
+                <a class="" href="#">BOYS</a>
+                <a class="" href="#">NEW ARRVALS</a>
+                <a class="" href="#">SHOS</a>
+                <a class="" href="#">CLOTHES</a>
+  
+  
+  
+            </div>
+        </div>
+  
+        <div class="text-center col-lg-3 col-md-4 col-sm-6 mt-4"> 
+        <h1 >Contact Us</h1>    
+        <div class="link-f ">
+            <a class=""  href="#">ADDRESS</a>
+            <p class="p-adrees  ">123 STRATE NAME,CITY,US</p>
+            <a class=""  href="#">PHON</a>
+            <p class="p-adrees  mx-2">(121 770 560 13)</p>
+            <a class=""  href="#">EMAIL</a>
+            <p class="p-adrees  mx-2">MAIL@EXAMLE</p>
+          
+  
+  
+  
+        </div>
+        </div>
+        <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+                <h1 class="mx-5">Instgram</h1>
+                 
+             <div class="img-f d-flex  ">
+                <img class="m-3" src="img/insta/1.jpg" alt="">
+                <img class="m-3" src="img/insta/3.jpg" alt="">
+             </div>
+             
+             <div class="img-f d-flex ">
+                <img class="m-3" src="img/insta/2.jpg" alt="">
+                <img class="m-3" src="img/insta/4.jpg" alt="">
+             </div>
+        
+        </div>
+    </div>
+  </section>
+  
+  <!-- end footer -->
+
+
+    <script src="js/shop.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

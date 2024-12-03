@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <link rel="stylesheet" href="css/stylec.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+<style>
+.hero{
+    background-image: url(./img/bannere.png);
+    text-align: center;
+    height: 300px;
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.info-hero  h1{
+ color: rgba(255, 68, 0, 0.699);
+}
+.info-hero  h1 span{
+  color: white;
+}
+.car table{
+    width: 100%;
+    white-space:nowrap ;
+    table-layout: fixed;
+    
+
+}
+.car table tr td{
+  text-align: center;
+  margin: px;
+}
+.car table tr td img{
+    width: 70px;
+}
+.car table tr td input{
+    width: 50px;
+    text-align: center;
+}
+thead{
+    border: gray 1px solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding: 10px;
+}
+thead tr td{
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+tbody tr td{
+  margin: 10px;
+
+}
+#cart-add{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#cart-add table{
+    width: 450px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+#cart-add table td{
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+#cart-add  button{
+    font-size: 20px;
+}
+#coupon{
+    margin-bottom: 20px;
+}
+#coupon input{
+    width: 400px;
+    border: 1px solid #e2e9e1;
+}
+#coupon button{
+    width: 120px;
+    font-size: 20px;
+}
+.cart-total{
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+
+
+}
+@media (max-width:725px){
+
+
+}
+
+</style>
+
+</head>
+<body>
+<!-- start navbar -->
+
+<div class="contanier n ">
+  <nav  class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand " href="#"><img src="img/logo1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse  navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">SHOP</a>
+            </li>
+           
+           
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            
+          </ul>
+          <div class="mx-5 icon-nav">
+      <a href="#">    <i class="fa-solid fa-magnifying-glass "></i> </a>
+      <a href="car.html"><i class="fa-solid fa-bag-shopping"></i></a>
+  </div>
+        </div>
+      </div>
+    </nav>
+</div>
+<!-- end navbar -->
+
+<!-- start hero -->
+<section class="hero">
+
+    <div class="info-hero">
+        <h1><span>#</span> CAR</h1>
+        <h5>read all case studies about your products</h5>
+    </div>
+
+</section>
+<!-- end hero -->
+
+<!-- <th scope="col">REMOVE</th>
+<th scope="col">IMGE</th>
+<th scope="col">PRODUCT</th>
+<th scope="col">PRICE</th>
+<th scope="col">QUANTITY</th>
+<th scope="col">SUP TOTAL</th> -->
+
+<!-- <tr class="d-flex justify-content-space-evenly align-items-center">
+    <td> <a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+        
+  <td><img src="img/shop/14.jpg" alt=""></td>
+  <td><P>Cartoon Astranout T-Sherts</P></td>
+  <td><p>$22.30</p></td>
+  <td>         <input type="number" ></td>
+  <td><p>$22.30</p></td>
+
+ </tr> -->
+
+<div class=" car mt-4 ">
+    <table class="container">
+        <thead >
+          <tr>
+            <td >Remove</td>
+            <td >Img</td>
+            <td >Product</td>
+            <td >PRICE</td>
+            <td>Quantity</td>
+            <td >SUPTOTAL</td>
+          </tr>
+        </thead>
+        
+        <tbody >
+            
+            <tr >
+                <td scope="row"><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></th>           
+                <td><img src="img/shop/14.jpg" alt=""></td>
+                <td>Thornton </td>   
+                         <td > <p class="m-2"> 100.50</p></td>
+    
+    
+                <td><input type="number" value="1"></td>
+                <td>100.50</td>
+              </tr>
+              <tr class="d-graid justify-content-space-evenly         align-items-center">
+                <td scope="row"><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></th>           
+                <td><img src="img/shop/18.jpg" alt=""></td>
+                <td>Thornton </td>   
+                         <td>100.50</td>
+    
+    
+                <td><input type="number" value="1"></td>
+                <td>100.50</td>
+              </tr>
+              <tr class="d-graid justify-content-space-evenly         align-items-center">
+                <td scope="row"><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></th>           
+                <td><img src="img/shop/3.jpg" alt=""></td>
+                <td>Thornton </td>   
+                         <td>100.50</td>
+    
+    
+                <td><input type="number" value="1"></td>
+                <td>100.50</td>
+              </tr>
+              <tr class="d-graid justify-content-space-evenly         align-items-center">
+                <td scope="row"><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></th>           
+                <td><img src="img/shop/10.jpg" alt=""></td>
+                <td>Thornton </td>   
+                         <td>100.50</td>
+    
+    
+                <td><input type="number" value="1"></td>
+                <td>100.50</td>
+              </tr>
+              <tr class="d-graid justify-content-space-evenly         align-items-center">
+                <td scope="row"><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></th>           
+                <td><img src="img/shop/11.jpg" alt=""></td>
+                <td>Thornton </td>   
+                         <td>100.50</td>
+    
+    
+                <td><input type="number" value="1"></td>
+                <td>100.50</td>
+              </tr>
+              <tr class="d-graid justify-content-space-evenly         align-items-center">
+                <td scope="row"><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></th>           
+                <td><img src="img/shop/12.jpg" alt=""></td>
+                <td>Thornton count</td>   
+                         <td>100.50</td>
+    
+    
+                <td><input type="number" value="1"></td>
+                <td>100.50</td>
+              </tr>
+        </tbody>
+      </table>
+</div>
+
+<!-- start cart  -->
+
+<section class="" id="cart-add"> 
+  
+        <div class="  col-lg-6 col-md-12 col-12"  id="coupon">
+            <h3 class="m-4">Apply Coupon </h3>
+            <div class="d-flex w-100">
+                <input type="text" class="form-control" placeholder="Entaer Youer Coupon">
+
+
+                <button class="m-2 btn btn-success">Apply</button>
+            </div>
+    </div>
+
+    <div class=" cart-total col-lg-6 col-md-12 col-12">
+       <h3>cart total</h3>
+        <table class="table w-100">
+
+        <tr>
+            <td>Cart Suptotal</td>
+            <td>$354</td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td> free</td>
+        </tr>
+        <tr>
+            <td> Total</td>
+            <td>$354</td>
+        </tr>
+    
+       </table>
+       <button class="btn btn-success">Proccsed Checkout</button>
+
+    </div>
+    </div>
+</section>
+<!-- end cart  -->
+
+<!-- start footer -->
+
+<section class="container-fulid bg-secondary footer ">
+  <div class="container row mt-5 m-auto">
+      <div class="text-center col-lg-3 col-md-4 col-sm-6 mt-4">
+<img src="img/logo2.png" alt="000">
+<p class="m-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cumque reprehenderit beatae vel, neque, cum numquam quia tempore sequi voluptates distinctio voluptatum autem laboriosam id mollitia pariatur non eum perferendis.</p>
+      </div>
+
+      <div class="text-center  col-lg-3 col-md-4 col-sm-6 mt-4">
+          <h1 class="mb-4">Featured</h1>
+          <div class="link-f ">
+              <a class="" href="#">MEN</a>
+              <a class="" href="#">WOMEN</a>
+              <a class="" href="#">BOYS</a>
+              <a class="" href="#">NEW ARRVALS</a>
+              <a class="" href="#">SHOS</a>
+              <a class="" href="#">CLOTHES</a>
+
+
+
+          </div>
+      </div>
+
+      <div class="text-center col-lg-3 col-md-4 col-sm-6 mt-4"> 
+      <h1 >Contact Us</h1>    
+      <div class="link-f ">
+          <a class=""  href="#">ADDRESS</a>
+          <p class="p-adrees  ">123 STRATE NAME,CITY,US</p>
+          <a class=""  href="#">PHON</a>
+          <p class="p-adrees  mx-2">(121 770 560 13)</p>
+          <a class=""  href="#">EMAIL</a>
+          <p class="p-adrees  mx-2">MAIL@EXAMLE</p>
+        
+
+
+
+      </div>
+      </div>
+      <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+              <h1 class="mx-5">Instgram</h1>
+               
+           <div class="img-f d-flex  ">
+              <img class="m-3" src="img/insta/1.jpg" alt="">
+              <img class="m-3" src="img/insta/3.jpg" alt="">
+           </div>
+           
+           <div class="img-f d-flex ">
+              <img class="m-3" src="img/insta/2.jpg" alt="">
+              <img class="m-3" src="img/insta/4.jpg" alt="">
+           </div>
+      
+      </div>
+  </div>
+</section>
+
+<!-- end footer -->
+    <!-- end footer -->
+        <script src="js/shop.js"></script>
+        <script src="js/bootstrap.js"></script>
+</body>
+</html>
